@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Ain massaro</title>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="dark:bg-neutral-900 flex flex-col items-center h-auto">
+    <header
+      class="relative flex flex-wrap sm:justify-start sm:flex-nowrap md:max-w-1/3 w-5/6 bg-white text-sm py-2 border-solid border-black dark:border-white border-1 rounded-full m-8 dark:bg-neutral-800"
+    >
+      <nav
+        class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            class="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80"
+            href="#"
+            aria-label="Brand"
+          >
+            <span
+              class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white"
+            >
+              profile
+            </span>
+          </a>
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+              id="hs-navbar-example-collapse"
+              aria-expanded="false"
+              aria-controls="hs-navbar-example"
+              aria-label="Toggle navigation"
+              data-hs-collapse="#hs-navbar-example"
+            >
+              <svg
+                class="hs-collapse-open:hidden shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" x2="21" y1="6" y2="6" />
+                <line x1="3" x2="21" y1="12" y2="12" />
+                <line x1="3" x2="21" y1="18" y2="18" />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+          </div>
+        </div>
+        <div
+          id="hs-navbar-example"
+          class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          aria-labelledby="hs-navbar-example-collapse"
+        >
+          <div
+            class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5"
+          >
+            <a
+              class="font-medium text-blue-500 focus:outline-hidden"
+              href="#"
+              aria-current="page"
+              >Landing</a
+            >
+            <a
+              class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+              href="https://github.com/GuilhermmeDev"
+              >Github</a
+            >
+            <a
+              class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+              href="https://www.linkedin.com/in/guilhermme-dev-morais/"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="md:max-w-1/3 w-5/6 flex flex-col gap-6">
+      <div class="gap-4 flex flex-row items-center justify-between">
+        <div class="gap-4 flex flex-row items-center">
+          <img src="AvatarMaker.svg" alt="logo" class="rounded-full w-20" />
+          <div class="flex flex-col">
+            <h1 class="font-semibold text-black dark:text-white text-sm">
+              Guilherme Morais
+            </h1>
+            <p class="text-black dark:text-gray-200 text-sm">
+              Back-End Developer, DevOps
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+            class="w-8"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+            class="w-8"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            class="w-8"
+          />
+        </div>
+      </div>
+
+      <section class="flex flex-col gap-6 mb-4">
+        <div>
+          <p class="text-black dark:text-gray-200 text-sm">
+            Sou apaixonado pela área de tecnologia e sempre busco inovar e
+            aprender mais a cada dia. Com experiência em frameworks web como
+            <strong>Next.js, Laravel, Tailwind e React</strong>, tenho me
+            especializado tanto no desenvolvimento front-end quanto no back-end.
+            Tenho a oportunidade de liderar projetos de software, guiando
+            equipes e garantindo a entrega de soluções robustas e de alta
+            qualidade. Como profissional, sou movido pelo desafio de criar
+            sistemas eficientes e escaláveis, sempre focando em atender às
+            necessidades dos usuários e promover a evolução tecnológica.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram dark:text-gray-200"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+            <a
+              class="text-black dark:text-gray-200 text-sm underline"
+              href="https://instagram.com/gmora1s"
+              target="_blank"
+            >
+              @gmora1s
+            </a>
+          </div>
+          <div class="flex flex-row gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail dark:text-gray-200"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <a
+              class="text-sm text-gray-200 decoration-solid underline"
+              href="mailto:guilherme.dev.morais@gmail.com"
+              target="_blank"
+            >
+              guilherme.dev.morais@gmail.com
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr class="dark:text-gray-200 text-black" />
+      <article class="flex flex-col gap-4">
+        <p class="text-black dark:text-gray-200 text-lg">Projetos</p>
+        <div class="grid grid-cols-3 gap-4">
+          <a
+            href="https://github.com/GuilhermmeDev/Sistema-biblioteca"
+            target="_blank"
+          >
+            <img
+              src="LYBRIS.svg"
+              alt="logo lybris"
+              class="w-50 bg-gray-200 rounded-lg"
+            />
+          </a>
+          <a
+            href="https://github.com/GuilhermmeDev/doe.it"
+            class="flex items-center"
+          >
+            <img
+              src="1.svg"
+              alt="logo doeit"
+              class="w-50 bg-gray-200 rounded-lg p-4 h-full"
+            />
+          </a>
+
+          <a
+            href="https://github.com/GuilhermmeDev/mcpflix_project"
+            class="flex items-center"
+          >
+            <img
+              src="logo_mcpflix.svg"
+              alt="logo mcpflix"
+              class="bg-gray-200 rounded-lg p-4 h-full"
+            />
+          </a>
+        </div>
+      </article>
+
+      <section class="my-6">
+        <!-- Timeline -->
+        <div>
+          <!-- Heading -->
+          <div class="ps-2 my-2 first:mt-0">
+            <h3
+              class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400"
+            >
+              20 Abr, 2024
+            </h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700"
+            >
+              <div
+                class="relative z-10 size-7 flex justify-center items-center"
+              >
+                <div
+                  class="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"
+                ></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-8">
+              <h3
+                class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white"
+              >
+                <svg
+                  class="shrink-0 size-4 mt-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" x2="8" y1="13" y2="13"></line>
+                  <line x1="16" x2="8" y1="17" y2="17"></line>
+                  <line x1="10" x2="8" y1="9" y2="9"></line>
+                </svg>
+                Criação do Projeto "Lybris"
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                Primeiro commit e inicio de uma aplicação robusta para
+                bibliotecas.
+              </p>
+              <button
+                type="button"
+                class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              >
+                <img
+                  class="shrink-0 size-4 rounded-full"
+                  src="AvatarMaker.svg"
+                  alt="Avatar"
+                />
+                GuilhermmeDev
+              </button>
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+
+          <!-- Heading -->
+          <div class="ps-2 my-2 first:mt-0">
+            <h3
+              class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400"
+            >
+              15 Set, 2024
+            </h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700"
+            >
+              <div
+                class="relative z-10 size-7 flex justify-center items-center"
+              >
+                <div
+                  class="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"
+                ></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-8">
+              <h3
+                class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white"
+              >
+                Criação do Projeto "DoeIt"
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                Primeiro commit da aplicação de doação comunitária com validação
+                por qrcodes modernos.
+              </p>
+              <button
+                type="button"
+                class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              >
+                <img
+                  class="shrink-0 size-4 rounded-full"
+                  src="AvatarMaker.svg"
+                  alt="Avatar"
+                />
+                GuilhermmeDev
+              </button>
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+
+          <!-- Heading -->
+          <div class="ps-2 my-2 first:mt-0">
+            <h3
+              class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400"
+            >
+              9 Fev, 2025
+            </h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700"
+            >
+              <div
+                class="relative z-10 size-7 flex justify-center items-center"
+              >
+                <div
+                  class="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"
+                ></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-8">
+              <h3
+                class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white"
+              >
+                Deploy do MCPFlix
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                Deploy da aplicação pela vercel para exibição de filmes da
+                escola Maria Célia Pinheiro Falcão.
+              </p>
+              <button
+                type="button"
+                class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              >
+                <img
+                  class="shrink-0 size-4 rounded-full"
+                  src="AvatarMaker.svg"
+                  alt="Avatar"
+                />
+                GuilhermmeDev
+              </button>
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- End Timeline -->
+      </section>
+    </main>
+
+    <script type="module">
+      import preline from "https:cdn.jsdelivr.net/npm/preline@3.0.0/+esm";
+    </script>
+  </body>
+</html>
